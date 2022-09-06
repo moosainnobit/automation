@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.nglc.application.AppTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 116.692 s <<< FAILURE! - in com.nglc.application.AppTest
+BlankDataCreateOrganisation(com.nglc.application.AppTest)  Time elapsed: 7.905 s  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found [Organisation name is required]
+	at com.nglc.application.AppTest.BlankDataCreateOrganisation(AppTest.java:422)
+
+EditValidUser(com.nglc.application.AppTest)  Time elapsed: 16.648 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Steffen Muldbjerg']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.1.12', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.12.10-1.el8.elrepo.x86_64', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.zAu6SF}, goog:chromeOptions: {debuggerAddress: localhost:43541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e40accc8616a5e4268f2a66d43160c66
+*** Element info: {Using=xpath, value=//p[normalize-space()='Steffen Muldbjerg']}
+	at com.nglc.application.AppTest.EditValidUser(AppTest.java:607)
+

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-06T17:09:10 IST" name="Surefire suite" finished-at="2022-09-06T17:11:06 IST" duration-ms="116371">
+    <groups>
+      <group name="Login-Functional">
+        <method signature="AppTest.login()[pri:1, instance:com.nglc.application.AppTest@49c43f4e]" name="login" class="com.nglc.application.AppTest"/>
+      </group> <!-- Login-Functional -->
+      <group name="Organisation-Functional">
+        <method signature="AppTest.BlankDataCreateOrganisation()[pri:116, instance:com.nglc.application.AppTest@49c43f4e]" name="BlankDataCreateOrganisation" class="com.nglc.application.AppTest"/>
+        <method signature="AppTest.CreateOrganisation()[pri:115, instance:com.nglc.application.AppTest@49c43f4e]" name="CreateOrganisation" class="com.nglc.application.AppTest"/>
+      </group> <!-- Organisation-Functional -->
+      <group name="User-Functional">
+        <method signature="AppTest.AddingUserwithBlankData()[pri:207, instance:com.nglc.application.AppTest@49c43f4e]" name="AddingUserwithBlankData" class="com.nglc.application.AppTest"/>
+        <method signature="AppTest.AddingValidUser()[pri:206, instance:com.nglc.application.AppTest@49c43f4e]" name="AddingValidUser" class="com.nglc.application.AppTest"/>
+        <method signature="AppTest.EditValidUser()[pri:210, instance:com.nglc.application.AppTest@49c43f4e]" name="EditValidUser" class="com.nglc.application.AppTest"/>
+      </group> <!-- User-Functional -->
+    </groups>
+    <test started-at="2022-09-06T17:09:10 IST" name="Surefire test" finished-at="2022-09-06T17:11:06 IST" duration-ms="116371">
+      <class name="com.nglc.application.AppTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:10 IST" name="startTest" finished-at="2022-09-06T17:09:10 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:10 IST" name="launchApp" finished-at="2022-09-06T17:09:17 IST" duration-ms="6673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="login()[pri:1, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:17 IST" name="login" finished-at="2022-09-06T17:09:21 IST" duration-ms="4392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:21 IST" name="postCondition" finished-at="2022-09-06T17:09:21 IST" duration-ms="63" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=AppTest.login()[pri:1, instance:com.nglc.application.AppTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:21 IST" name="launchApp" finished-at="2022-09-06T17:09:27 IST" duration-ms="5491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="CreateOrganisation()[pri:115, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:27 IST" name="CreateOrganisation" finished-at="2022-09-06T17:09:40 IST" duration-ms="13227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganisation -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:40 IST" name="postCondition" finished-at="2022-09-06T17:09:40 IST" duration-ms="64" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateOrganisation status=SUCCESS method=AppTest.CreateOrganisation()[pri:115, instance:com.nglc.application.AppTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:40 IST" name="launchApp" finished-at="2022-09-06T17:09:47 IST" duration-ms="6713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="BlankDataCreateOrganisation()[pri:116, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:47 IST" name="BlankDataCreateOrganisation" finished-at="2022-09-06T17:09:55 IST" duration-ms="7902" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [Organisation name is required]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [Organisation name is required]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.nglc.screen.OrganisationAdd.CreateAnOrganisationBlankRequiredData(OrganisationAdd.java:180)
+at com.nglc.application.AppTest.BlankDataCreateOrganisation(AppTest.java:422)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlankDataCreateOrganisation -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:55 IST" name="postCondition" finished-at="2022-09-06T17:09:55 IST" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BlankDataCreateOrganisation status=FAILURE method=AppTest.BlankDataCreateOrganisation()[pri:116, instance:com.nglc.application.AppTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:09:55 IST" name="launchApp" finished-at="2022-09-06T17:10:03 IST" duration-ms="8243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="AddingValidUser()[pri:206, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:03 IST" name="AddingValidUser" finished-at="2022-09-06T17:10:25 IST" duration-ms="21197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingValidUser -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:25 IST" name="postCondition" finished-at="2022-09-06T17:10:25 IST" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddingValidUser status=SUCCESS method=AppTest.AddingValidUser()[pri:206, instance:com.nglc.application.AppTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:25 IST" name="launchApp" finished-at="2022-09-06T17:10:31 IST" duration-ms="6053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="AddingUserwithBlankData()[pri:207, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:31 IST" name="AddingUserwithBlankData" finished-at="2022-09-06T17:10:45 IST" duration-ms="13829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingUserwithBlankData -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:45 IST" name="postCondition" finished-at="2022-09-06T17:10:45 IST" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddingUserwithBlankData status=SUCCESS method=AppTest.AddingUserwithBlankData()[pri:207, instance:com.nglc.application.AppTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:45 IST" name="launchApp" finished-at="2022-09-06T17:10:49 IST" duration-ms="4720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="EditValidUser()[pri:210, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:10:49 IST" name="EditValidUser" finished-at="2022-09-06T17:11:06 IST" duration-ms="16647" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Steffen Muldbjerg']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.1.12', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.12.10-1.el8.elrepo.x86_64', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.zAu6SF}, goog:chromeOptions: {debuggerAddress: localhost:43541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e40accc8616a5e4268f2a66d43160c66
+*** Element info: {Using=xpath, value=//p[normalize-space()='Steffen Muldbjerg']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[normalize-space()='Steffen Muldbjerg']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.1.12', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.12.10-1.el8.elrepo.x86_64', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.zAu6SF}, goog:chromeOptions: {debuggerAddress: localhost:43541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e40accc8616a5e4268f2a66d43160c66
+*** Element info: {Using=xpath, value=//p[normalize-space()='Steffen Muldbjerg']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.nglc.core.Library.get_WebElement_Object(Library.java:21)
+at com.nglc.core.Library.clickOnAnyElement(Library.java:46)
+at com.nglc.screen.UserList.ClickOnActiveUserCard(UserList.java:33)
+at com.nglc.application.AppTest.EditValidUser(AppTest.java:607)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditValidUser -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:11:06 IST" name="postCondition" finished-at="2022-09-06T17:11:06 IST" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EditValidUser status=FAILURE method=AppTest.EditValidUser()[pri:210, instance:com.nglc.application.AppTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.nglc.application.AppTest@49c43f4e]" started-at="2022-09-06T17:11:06 IST" name="afterclass" finished-at="2022-09-06T17:11:06 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com.nglc.application.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

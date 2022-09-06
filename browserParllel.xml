@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" thread-count = "3" parallel="tests">
+
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<groups>
+            <run>
+              <include name = "Login-Functional"></include>
+              <include name = "Organisation-Functional"></include>
+            </run>
+        </groups>
+		<classes>
+			<class name="application.AppTest" />
+			<!-- <include value="testGuru99TC1" dependsOnMethods=" testGuru99TC2"/> -->
+			<!-- <exclude value="testGuru99TC1" dependsOnMethods=" testGuru99TC2"/> -->
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="firefoxTest">
+		<parameter name="browser" value="firefox" />
+		<groups>
+            <run>
+              <include name = "Login-Functional"></include>
+              <include name = "Organisation-Functional"></include>
+            </run>
+        </groups>
+		<classes>
+			<class name="application.AppTest" />
+			<!-- <class name="application.AppTest2"/> -->
+		</classes>
+	</test>
+
+	<test name="ie">
+		<parameter name="browser" value="ie" />
+		<groups>
+            <run>
+              <include name = "Login-Functional"></include>
+              <include name = "Organisation-Functional"></include>
+            </run>
+        </groups>
+		<classes>
+			<class name="application.AppTest" />
+			<!-- <class name="application.AppTest2"/> -->
+		</classes>
+	</test>
+</suite> <!-- Suite -->
