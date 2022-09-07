@@ -23,7 +23,7 @@ public class Screenshots
 {
 		//String photo= System.getProperty("user.dir")+"//Screenshots//";   
 		//"/home/innobit/eclipse-workspace/nglc-webui-automation/Screenshots/";
-		String photo= "web-automation//Screenshots//"; 
+		String photo= "Screenshots//"; 
 		Date d= new Date();
 		String d1=d.toString();
 		String date= d1.replaceAll(":", "-");

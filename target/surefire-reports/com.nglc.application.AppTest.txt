@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.nglc.application.AppTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.147 s <<< FAILURE! - in com.nglc.application.AppTest
-EditValidUser(com.nglc.application.AppTest)  Time elapsed: 8.648 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.512 s <<< FAILURE! - in com.nglc.application.AppTest
+EditValidUser(com.nglc.application.AppTest)  Time elapsed: 8.681 s  <<< FAILURE!
 java.lang.NullPointerException
 	at com.nglc.application.AppTest.EditValidUser(AppTest.java:607)
 

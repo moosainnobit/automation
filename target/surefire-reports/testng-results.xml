@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-07T14:08:52 IST" name="Surefire suite" finished-at="2022-09-07T14:09:13 IST" duration-ms="20930">
+  <suite started-at="2022-09-07T14:18:16 IST" name="Surefire suite" finished-at="2022-09-07T14:18:41 IST" duration-ms="24262">
     <groups>
       <group name="Login-Functional">
         <method signature="AppTest.login()[pri:1, instance:com.nglc.application.AppTest@5cdd8682]" name="login" class="com.nglc.application.AppTest"/>
@@ -11,21 +11,21 @@
         <method signature="AppTest.EditValidUser()[pri:210, instance:com.nglc.application.AppTest@5cdd8682]" name="EditValidUser" class="com.nglc.application.AppTest"/>
       </group> <!-- User-Functional -->
     </groups>
-    <test started-at="2022-09-07T14:08:52 IST" name="Surefire test" finished-at="2022-09-07T14:09:13 IST" duration-ms="20930">
+    <test started-at="2022-09-07T14:18:16 IST" name="Surefire test" finished-at="2022-09-07T14:18:41 IST" duration-ms="24262">
       <class name="com.nglc.application.AppTest">
-        <test-method is-config="true" signature="startTest()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:08:52 IST" name="startTest" finished-at="2022-09-07T14:08:53 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:16 IST" name="startTest" finished-at="2022-09-07T14:18:16 IST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:08:53 IST" name="launchApp" finished-at="2022-09-07T14:08:56 IST" duration-ms="3786" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:16 IST" name="launchApp" finished-at="2022-09-07T14:18:22 IST" duration-ms="5464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="login()[pri:1, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:08:56 IST" name="login" finished-at="2022-09-07T14:09:01 IST" duration-ms="4302" status="PASS">
+        <test-method signature="login()[pri:1, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:22 IST" name="login" finished-at="2022-09-07T14:18:26 IST" duration-ms="4301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:09:01 IST" name="postCondition" finished-at="2022-09-07T14:09:01 IST" duration-ms="66" status="PASS">
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:26 IST" name="postCondition" finished-at="2022-09-07T14:18:26 IST" duration-ms="71" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,11 +36,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:09:01 IST" name="launchApp" finished-at="2022-09-07T14:09:04 IST" duration-ms="3491" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:26 IST" name="launchApp" finished-at="2022-09-07T14:18:31 IST" duration-ms="5147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="EditValidUser()[pri:210, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:09:04 IST" name="EditValidUser" finished-at="2022-09-07T14:09:13 IST" duration-ms="8645" status="FAIL">
+        <test-method signature="EditValidUser()[pri:210, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:31 IST" name="EditValidUser" finished-at="2022-09-07T14:18:40 IST" duration-ms="8677" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -84,7 +84,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EditValidUser -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:09:13 IST" name="postCondition" finished-at="2022-09-07T14:09:13 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:40 IST" name="postCondition" finished-at="2022-09-07T14:18:40 IST" duration-ms="254" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:09:13 IST" name="afterclass" finished-at="2022-09-07T14:09:13 IST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.nglc.application.AppTest@5cdd8682]" started-at="2022-09-07T14:18:40 IST" name="afterclass" finished-at="2022-09-07T14:18:41 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterclass -->
