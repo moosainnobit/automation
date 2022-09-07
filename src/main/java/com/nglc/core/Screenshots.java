@@ -21,16 +21,17 @@ public class Screenshots
 
 	public static String photo(WebDriver driver,String tcName) throws IOException
 {
-		String photo= System.getProperty("user.dir")+"//Screenshots//";   //"/home/innobit/eclipse-workspace/nglc-webui-automation/Screenshots/";
+		//String photo= System.getProperty("user.dir")+"//Screenshots//";   
+		//"/home/innobit/eclipse-workspace/nglc-webui-automation/Screenshots/";
+		String photo= "web-automation//Screenshots//"; 
 		Date d= new Date();
 		String d1=d.toString();
 		String date= d1.replaceAll(":", "-");
 		File sourceFile= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);		
 		File destinationFile= new File(photo+date+tcName+".jpeg");
-		String path= destinationFile.getAbsolutePath();
+		String path= destinationFile.getCanonicalPath();
 		FileUtils.copyFile(sourceFile, destinationFile);
 
-		
 		return path;
 	}
 

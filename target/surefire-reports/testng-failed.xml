@@ -6,13 +6,10 @@
       <class name="com.nglc.application.AppTest">
         <methods>
           <include name="startTest"/>
-          <include name="UserProfile"/>
           <include name="launchApp"/>
           <include name="afterclass"/>
-          <include name="validEmailResetPassword"/>
           <include name="postCondition"/>
           <include name="EditValidUser"/>
-          <include name="BlankDataCreateOrganisation"/>
         </methods>
       </class> <!-- com.nglc.application.AppTest -->
     </classes>
