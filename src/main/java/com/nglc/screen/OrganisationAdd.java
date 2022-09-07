@@ -32,11 +32,8 @@ public class OrganisationAdd extends AppDriver {
 
 		driver.findElement(By.xpath(Obj.getProperty("BY_CREATEORGANISATION_BUTTON"))).click();
 		Thread.sleep(2000);
-		String expectedUrl = "http://eu-n1-dev.nglc.net/organisation/list";
+		String expectedUrl = "https://eu-n1-dev.nglc.net/organisation/list";
 		String actualUrl = driver.getCurrentUrl();
-		
-//		Assert.assertEquals(expectedUrl, actualUrl);
-//		test.log(LogStatus.PASS, "Organisation Added Successfully");
 		
 		if(expectedUrl.equalsIgnoreCase(actualUrl)) {
 			test.log(LogStatus.PASS, "Organization Added Successfully");

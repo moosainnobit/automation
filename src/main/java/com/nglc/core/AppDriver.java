@@ -51,7 +51,7 @@ public class AppDriver {
 	@BeforeClass
 	public  void startTest()
 	{
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); //time stamp
     	String repName="Test-Report-"+timeStamp+".html";
     	extent=new ExtentReports(System.getProperty("user.dir")+ "//Reports//"+repName);
 		extent.addSystemInfo("OS", "Linux Centos 8");
@@ -64,9 +64,9 @@ public class AppDriver {
 	{	
 		
 		long startTime = System.currentTimeMillis();
-		FileInputStream fis_config=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//nglc//properties//Config.properties");  //("/home/innobit/eclipse-workspace/nglc-webui-automation/src/main/java/com/nglc/properties/Config.properties");
+		FileInputStream fis_config=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//nglc//properties//Config.properties");  //("/home/innobit/eclipse-workspace/automation/src/main/java/com/nglc/properties/Config.properties");
 		Config.load(fis_config);
-		FileInputStream fis_obj=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//nglc//properties//Object.properties"); //("/home/innobit/eclipse-workspace/nglc-webui-automation/src/main/java/com/nglc/properties/Object.properties");
+		FileInputStream fis_obj=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//com//nglc//properties//Object.properties"); //("/home/innobit/eclipse-workspace/automation/src/main/java/com/nglc/properties/Object.properties");
 		Obj.load(fis_obj);
 		if(Config.getProperty("browser").equalsIgnoreCase("Chrome")){
 			log.info("Opening Chrome Browser");

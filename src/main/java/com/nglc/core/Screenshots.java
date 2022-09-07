@@ -21,7 +21,7 @@ public class Screenshots
 
 	public static String photo(WebDriver driver,String tcName) throws IOException
 {
-		String photo= System.getProperty("user.dir")+"//Screenshots//";//"/home/innobit/eclipse-workspace/nglc-webui-automation/Screenshots/";
+		String photo= System.getProperty("user.dir")+"//Screenshots//";   //"/home/innobit/eclipse-workspace/nglc-webui-automation/Screenshots/";
 		Date d= new Date();
 		String d1=d.toString();
 		String date= d1.replaceAll(":", "-");
