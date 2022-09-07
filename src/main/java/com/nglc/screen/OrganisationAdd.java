@@ -32,20 +32,10 @@ public class OrganisationAdd extends AppDriver {
 
 		driver.findElement(By.xpath(Obj.getProperty("BY_CREATEORGANISATION_BUTTON"))).click();
 		Thread.sleep(2000);
-		String expectedUrl = "https://eu-n1-dev.nglc.net/organisation/list";
-		String actualUrl = driver.getCurrentUrl();
-		
-		if(expectedUrl.equalsIgnoreCase(actualUrl)) {
-			test.log(LogStatus.PASS, "Organization Added Successfully");
-		}
-		else {
-			test.log(LogStatus.FAIL, "Expected URL: "+expectedUrl+" Actual URL: "+actualUrl);
-		}
+		test.log(LogStatus.PASS, "Click on Create Organization Button");
 	}
 
 	public void CreateAnOrganisationFilledAllRequiredData() throws InterruptedException {
-		
-		
 
 		WebElement orgNameEle = driver.findElement(By.xpath(Obj.getProperty("BY_ORGANISATIONNAME_TEXT")));
 		orgNameEle.sendKeys(elib.readData("CreateOrganisation", 1, 1));
@@ -54,15 +44,13 @@ public class OrganisationAdd extends AppDriver {
 			test.log(LogStatus.FAIL, "Organisation name is required");
 		}
 
-		
 		WebElement displayNameEle = driver.findElement(By.xpath(Obj.getProperty("BY_DISPLAYNAME_TEXT")));
 		displayNameEle.sendKeys(elib.readData("CreateOrganisation", 1, 2));
 		String displayNameText = displayNameEle.getAttribute("value");
 		if (displayNameText == "") {
 			test.log(LogStatus.FAIL, "Display name is required");
 		}
-		
-		
+
 		WebElement streetAddEle = driver.findElement(By.xpath(Obj.getProperty("BY_STREETADDRESS_TEXT")));
 		streetAddEle.sendKeys(elib.readData("CreateOrganisation", 1, 3));
 		String streetAddText = streetAddEle.getAttribute("value");
@@ -70,7 +58,6 @@ public class OrganisationAdd extends AppDriver {
 			test.log(LogStatus.FAIL, "Street address is required");
 		}
 
-		
 		WebElement localityEle = driver.findElement(By.xpath(Obj.getProperty("BY_LOCALITY_TEXT")));
 		localityEle.sendKeys(elib.readData("CreateOrganisation", 1, 4));
 		String localityText = localityEle.getAttribute("value");
@@ -84,8 +71,7 @@ public class OrganisationAdd extends AppDriver {
 		if (postCodeText == "") {
 			test.log(LogStatus.FAIL, "Postal Code is required");
 		}
-		
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)", "");
 
@@ -97,7 +83,6 @@ public class OrganisationAdd extends AppDriver {
 		if (countryText == "") {
 			test.log(LogStatus.FAIL, "Country Code is required");
 		}
-		
 
 		WebElement regiondrpdwn = driver.findElement(By.xpath(Obj.getProperty("BY_REGION_DROPDOWN")));
 		regiondrpdwn.sendKeys(elib.readData("CreateOrganisation", 1, 7));
@@ -110,17 +95,17 @@ public class OrganisationAdd extends AppDriver {
 
 //		WebElement ele = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Obj.getProperty("BY_ORGANISATIONWEBSITE_TEXT"))));
 //		js.executeScript("arguments[0].scrollIntoView();", ele);
-		
+
 		WebElement websiteEle = driver.findElement(By.xpath(Obj.getProperty("BY_ORGANISATIONWEBSITE_TEXT")));
 		websiteEle.sendKeys(elib.readData("CreateOrganisation", 1, 8));
-		
+
 //		WebElement emailEle = driver.findElement(By.xpath(Obj.getProperty("BY_SUPPORTEMAIL_TEXT")));
 //		emailEle.sendKeys(elib.readData("CreateOrganization", 1, 9));
 //		
 //		Thread.sleep(2000);
 //		WebElement urlEle = driver.findElement(By.xpath(Obj.getProperty("BY_SUPPORTURL_TEXT")));
 //		urlEle.sendKeys(elib.readData("CreateOrganization", 1, 10));
-		
+
 		WebElement languagedrpdwn = driver.findElement(By.xpath(Obj.getProperty("BY_LANGUAGE_DROPDOWN")));
 		languagedrpdwn.sendKeys(elib.readData("CreateOrganisation", 1, 11));
 		languagedrpdwn.sendKeys(Keys.DOWN);
@@ -129,8 +114,7 @@ public class OrganisationAdd extends AppDriver {
 		if (languageText == "") {
 			test.log(LogStatus.FAIL, "Language is required");
 		}
-		
-		
+
 		WebElement timezonedrpdwn = driver.findElement(By.xpath(Obj.getProperty("BY_TIMEZONE_DROPDOWN")));
 		timezonedrpdwn.sendKeys(elib.readData("CreateOrganisation", 1, 12));
 		timezonedrpdwn.sendKeys(Keys.DOWN);
@@ -139,18 +123,53 @@ public class OrganisationAdd extends AppDriver {
 		if (timezoneText == "") {
 			test.log(LogStatus.FAIL, "Timezone is required");
 		}
-		
 
 		WebElement culturedrpdwn = driver.findElement(By.xpath(Obj.getProperty("BY_CULTURE_DROPDOWN")));
+		culturedrpdwn.sendKeys(elib.readData("CreateOrganisation", 1, 13));
 		culturedrpdwn.sendKeys(Keys.DOWN);
 		culturedrpdwn.sendKeys(Keys.ENTER);
 		Thread.sleep(1000);
-		culturedrpdwn.sendKeys(elib.readData("CreateOrganisation", 1, 13));
+		String cultureText = culturedrpdwn.getAttribute("value");
+		if (cultureText == "") {
+			test.log(LogStatus.FAIL, "Culture is required");
+		}
+
+	}
+
+	public void ReqFullNameBlankInput() throws InterruptedException {
+		WebElement OrgNameError = driver.findElement(By.xpath(Obj.getProperty("BY_ORGNAME_ERROR_MSG")));
+		String ExpectedOrgNameError = "Organisation name is required";
+		String ActualOrgNameError = OrgNameError.getText();
+		if (ExpectedOrgNameError.equalsIgnoreCase(ActualOrgNameError)) {
+			test.log(LogStatus.PASS, "Expected Validation Message = Actual Validation Message");
+		} else {
+			test.log(LogStatus.FAIL,
+					"Expected Error = " + ExpectedOrgNameError + " Actual Error = " + ActualOrgNameError);
+		}
+	}
+
+	public void ValidateOrgListScreen() throws InterruptedException {
+		String expectedUrl = "https://eu-n1-dev.nglc.net/organisation/list";
 		Thread.sleep(1000);
-//		String cultureText = culturedrpdwn.getAttribute("value");
-//		if (cultureText == "") {
-//			test.log(LogStatus.FAIL, "Culture is required");
-//		}
+		String actualUrl = driver.getCurrentUrl();
+		if (expectedUrl.equalsIgnoreCase(actualUrl)) {
+			test.log(LogStatus.PASS, "User is on the Organization List Screen");
+		} else {
+			test.log(LogStatus.FAIL, "Expected URL: " + expectedUrl + " Actual URL: " + actualUrl);
+		}
+
+	}
+
+	public void ValidateAddOrgScreen() throws InterruptedException {
+		String actualUrl = "https://eu-n1-dev.nglc.net/organisation/add";
+		Thread.sleep(1000);
+		String expectedUrl = driver.getCurrentUrl();
+		if (actualUrl.equalsIgnoreCase(expectedUrl)) {
+			test.log(LogStatus.PASS, " User is on the add organisation Screen ");
+		} else {
+			test.log(LogStatus.FAIL, "Actual Result:: User is not on add an organisation  "
+					+ "\n Expected Result:: https://eu-n1-dev.nglc.net/organisation/add  ");
+		}
 
 	}
 

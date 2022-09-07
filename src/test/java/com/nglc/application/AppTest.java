@@ -403,6 +403,7 @@ public class AppTest extends AppDriver {
 		oa.CreateAnOrganisationFilledAllRequiredData();
 		Thread.sleep(2000);
 		oa.clickOnCreateOrganisationButton();
+		oa.ValidateOrgListScreen();
 	}
 
 	// need to work
@@ -418,7 +419,8 @@ public class AppTest extends AppDriver {
 		oo.clickOnOrganisationsLink();
 		ol.clickOnAddAnOrganisationBtn();
 		oa.clickOnCreateOrganisationButton();
-		oa.CreateAnOrganisationBlankRequiredData();
+		oa.ReqFullNameBlankInput();
+		oa.ValidateAddOrgScreen();
 	}
 
 	@Test(priority = 207, groups = { "User-Functional" })
@@ -604,6 +606,7 @@ public class AppTest extends AppDriver {
 		oo.clickOnBibliothecaUsersLink();
 		Thread.sleep(2000);
 		ul.ClickOnActiveUserCard();
+		Thread.sleep(1000);
 		ue.EditUserName();
 		ue.EditUserPhone();
 		ue.ClickOnApplyChangesButton();

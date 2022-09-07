@@ -28,20 +28,16 @@ public class OrganisationList extends AppDriver {
 	}
 
 	public void clickOnAddAnOrganisationBtn() throws InterruptedException {
-//		long startTime = System.currentTimeMillis();
 		library.clickOnAnyElement(Obj.getProperty("BY_ADDANORGANISATIONS_BUTTON"), "xpath", "click");
 		String actualUrl = "https://eu-n1-dev.nglc.net/organisation/add";
 		String expectedUrl = driver.getCurrentUrl();
-		
-//	    long endTime = System.currentTimeMillis();
-//		long totalTime = endTime - startTime;
+
 		if (actualUrl.equalsIgnoreCase(expectedUrl)) {
 			test.log(LogStatus.PASS, " User is on the add an organisation Screen ");
 		} else {
 			test.log(LogStatus.FAIL, "Actual Result:: User is not being redirect to the add an organisation  "
 					+ "\n Expected Result:: User should be redirect to the add an organisation  ");
 		}
-//		test.log(LogStatus.INFO,"Total Page Load Time for Add an Organisation Screen: " + totalTime + " milliseconds");
 		  
 
 	}
