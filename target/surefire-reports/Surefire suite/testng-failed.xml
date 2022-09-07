@@ -10,7 +10,6 @@
           <include name="afterclass"/>
           <include name="postCondition"/>
           <include name="EditValidUser"/>
-          <include name="BlankDataCreateOrganisation"/>
         </methods>
       </class> <!-- com.nglc.application.AppTest -->
     </classes>

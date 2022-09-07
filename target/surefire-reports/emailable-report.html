@@ -9,23 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">116,371</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">53,945</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.nglc.application.AppTest</td><td><a href="#m0">BlankDataCreateOrganisation</a></td><td rowspan="1">1662464387495</td><td rowspan="1">7902</td></tr><tr class="failedeven"><td><a href="#m1">EditValidUser</a></td><td rowspan="1">1662464449921</td><td rowspan="1">16647</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.nglc.application.AppTest</td><td><a href="#m2">AddingUserwithBlankData</a></td><td rowspan="1">1662464431263</td><td rowspan="1">13829</td></tr><tr class="passedeven"><td><a href="#m3">AddingValidUser</a></td><td rowspan="1">1662464403904</td><td rowspan="1">21197</td></tr><tr class="passedeven"><td><a href="#m4">CreateOrganisation</a></td><td rowspan="1">1662464367489</td><td rowspan="1">13227</td></tr><tr class="passedeven"><td><a href="#m5">login</a></td><td rowspan="1">1662464357541</td><td rowspan="1">4392</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nglc.application.AppTest</td><td><a href="#m0">EditValidUser</a></td><td rowspan="1">1662530245990</td><td rowspan="1">16621</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.nglc.application.AppTest</td><td><a href="#m1">AddingValidUser</a></td><td rowspan="1">1662530222111</td><td rowspan="1">19902</td></tr><tr class="passedeven"><td><a href="#m2">login</a></td><td rowspan="1">1662530214232</td><td rowspan="1">4310</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.nglc.application.AppTest#BlankDataCreateOrganisation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [null] but found [Organisation name is required]
-	at com.nglc.screen.OrganisationAdd.CreateAnOrganisationBlankRequiredData(OrganisationAdd.java:180)
-	at com.nglc.application.AppTest.BlankDataCreateOrganisation(AppTest.java:422)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.nglc.application.AppTest#EditValidUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Steffen Muldbjerg&apos;]&quot;}
+<h2>Surefire test</h2><h3 id="m0">com.nglc.application.AppTest#EditValidUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Steffen Muldbjerg&apos;]&quot;}
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;192.168.1.12&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.12.10-1.el8.elrepo.x86_64&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;localhost.localdomain&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.12.10-1.el8.elrepo.x86_64&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.zAu6SF}, goog:chromeOptions: {debuggerAddress: localhost:43541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e40accc8616a5e4268f2a66d43160c66
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.a0OvuJ}, goog:chromeOptions: {debuggerAddress: localhost:37301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc999692aa34f5357adaef6a383cd7e5
 *** Element info: {Using=xpath, value=//p[normalize-space()=&apos;Steffen Muldbjerg&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -40,12 +35,10 @@ Session ID: e40accc8616a5e4268f2a66d43160c66
 	at com.nglc.core.Library.get_WebElement_Object(Library.java:21)
 	at com.nglc.core.Library.clickOnAnyElement(Library.java:46)
 	at com.nglc.screen.UserList.ClickOnActiveUserCard(UserList.java:33)
-	at com.nglc.application.AppTest.EditValidUser(AppTest.java:607)
+	at com.nglc.application.AppTest.EditValidUser(AppTest.java:606)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.nglc.application.AppTest#AddingUserwithBlankData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.nglc.application.AppTest#AddingValidUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.nglc.application.AppTest#CreateOrganisation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.nglc.application.AppTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nglc.application.AppTest#AddingValidUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nglc.application.AppTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

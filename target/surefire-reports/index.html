@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>3 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,11 +102,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.nglc.application.AppTest" class="method navigator-link" hash-for-method="BlankDataCreateOrganisation">BlankDataCreateOrganisation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.nglc.application.AppTest" class="method navigator-link" hash-for-method="EditValidUser">EditValidUser</a> <!-- method navigator-link -->
@@ -123,17 +118,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.nglc.application.AppTest" class="method navigator-link" hash-for-method="AddingUserwithBlankData">AddingUserwithBlankData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.nglc.application.AppTest" class="method navigator-link" hash-for-method="AddingValidUser">AddingValidUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.nglc.application.AppTest" class="method navigator-link" hash-for-method="CreateOrganisation">CreateOrganisation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,19 +146,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BlankDataCreateOrganisation">
-                  </a> <!-- BlankDataCreateOrganisation -->
-                  <span class="method-name">BlankDataCreateOrganisation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [Organisation name is required]
-	at com.nglc.screen.OrganisationAdd.CreateAnOrganisationBlankRequiredData(OrganisationAdd.java:180)
-	at com.nglc.application.AppTest.BlankDataCreateOrganisation(AppTest.java:422)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="EditValidUser">
                   </a> <!-- EditValidUser -->
                   <span class="method-name">EditValidUser</span>
@@ -181,10 +153,10 @@
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;192.168.1.12&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.12.10-1.el8.elrepo.x86_64&apos;, java.version: &apos;11.0.14&apos;
+System info: host: &apos;localhost.localdomain&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.12.10-1.el8.elrepo.x86_64&apos;, java.version: &apos;11.0.14&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.zAu6SF}, goog:chromeOptions: {debuggerAddress: localhost:43541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e40accc8616a5e4268f2a66d43160c66
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: /tmp/.com.google.Chrome.a0OvuJ}, goog:chromeOptions: {debuggerAddress: localhost:37301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc999692aa34f5357adaef6a383cd7e5
 *** Element info: {Using=xpath, value=//p[normalize-space()=&apos;Steffen Muldbjerg&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -199,7 +171,7 @@ Session ID: e40accc8616a5e4268f2a66d43160c66
 	at com.nglc.core.Library.get_WebElement_Object(Library.java:21)
 	at com.nglc.core.Library.clickOnAnyElement(Library.java:46)
 	at com.nglc.screen.UserList.ClickOnActiveUserCard(UserList.java:33)
-	at com.nglc.application.AppTest.EditValidUser(AppTest.java:607)
+	at com.nglc.application.AppTest.EditValidUser(AppTest.java:606)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -215,23 +187,9 @@ Session ID: e40accc8616a5e4268f2a66d43160c66
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddingUserwithBlankData">
-                  </a> <!-- AddingUserwithBlankData -->
-                  <span class="method-name">AddingUserwithBlankData</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="AddingValidUser">
                   </a> <!-- AddingValidUser -->
                   <span class="method-name">AddingValidUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="CreateOrganisation">
-                  </a> <!-- CreateOrganisation -->
-                  <span class="method-name">CreateOrganisation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -287,24 +245,8 @@ Session ID: e40accc8616a5e4268f2a66d43160c66
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">Organisation-Functional</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">BlankDataCreateOrganisation</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">CreateOrganisation</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
               <span class="test-group-name">User-Functional</span>
               <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">AddingUserwithBlankData</span>
-                <br/>
-              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">AddingValidUser</span>
                 <br/>
@@ -330,36 +272,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddingValidUser')
 data.setCell(0, 2, 'com.nglc.application.AppTest')
-data.setCell(0, 3, 21197);
+data.setCell(0, 3, 19902);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'EditValidUser')
 data.setCell(1, 2, 'com.nglc.application.AppTest')
-data.setCell(1, 3, 16647);
+data.setCell(1, 3, 16621);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AddingUserwithBlankData')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'com.nglc.application.AppTest')
-data.setCell(2, 3, 13829);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CreateOrganisation')
-data.setCell(3, 2, 'com.nglc.application.AppTest')
-data.setCell(3, 3, 13227);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'BlankDataCreateOrganisation')
-data.setCell(4, 2, 'com.nglc.application.AppTest')
-data.setCell(4, 3, 7902);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login')
-data.setCell(5, 2, 'com.nglc.application.AppTest')
-data.setCell(5, 3, 4392);
+data.setCell(2, 3, 4310);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -392,83 +322,45 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">243 ms</span>
+                <span class="method-start">196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">6917 ms</span>
+                <span class="method-start">5080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition([TestResult name=login status=SUCCESS method=AppTest.login()[pri:1, instance:com.nglc.application.Ap...)</span>
-                <span class="method-start">11310 ms</span>
+                <span class="method-start">9391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">11374 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">CreateOrganisation</span>
-                <span class="method-start">16865 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=CreateOrganisation status=SUCCESS method=AppTest.CreateOrganisation()[pri:115, inst...)</span>
-                <span class="method-start">30093 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">30158 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">BlankDataCreateOrganisation</span>
-                <span class="method-start">36871 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=BlankDataCreateOrganisation status=FAILURE method=AppTest.BlankDataCreateOrganisati...)</span>
-                <span class="method-start">44776 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">45037 ms</span>
+                <span class="method-start">9461 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AddingValidUser</span>
-                <span class="method-start">53280 ms</span>
+                <span class="method-start">12959 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition([TestResult name=AddingValidUser status=SUCCESS method=AppTest.AddingValidUser()[pri:206, instance:c...)</span>
-                <span class="method-start">74477 ms</span>
+                <span class="method-start">32862 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">74586 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AddingUserwithBlankData</span>
-                <span class="method-start">80639 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">postCondition([TestResult name=AddingUserwithBlankData status=SUCCESS method=AppTest.AddingUserwithBlankData()[pri...)</span>
-                <span class="method-start">94468 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp</span>
-                <span class="method-start">94577 ms</span>
+                <span class="method-start">32971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">EditValidUser</span>
-                <span class="method-start">99297 ms</span>
+                <span class="method-start">36838 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition([TestResult name=EditValidUser status=FAILURE method=AppTest.EditValidUser()[pri:210, instance:com.n...)</span>
-                <span class="method-start">115945 ms</span>
+                <span class="method-start">53462 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterclass</span>
-                <span class="method-start">116191 ms</span>
+                <span class="method-start">53734 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
