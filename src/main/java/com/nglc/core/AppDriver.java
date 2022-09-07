@@ -32,7 +32,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-//import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -86,13 +86,11 @@ public class AppDriver {
 		
 		driver.manage().window().maximize();
 		driver.get(Config.getProperty("url"));
+		test.log(LogStatus.PASS, "Browser Launched Successfully");
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		long endTime = System.currentTimeMillis();
-		long totalTime = endTime - startTime;
-			
-		//test.log(LogStatus.PASS, "Browser Launched Successfully");
-		//test.log(LogStatus.INFO,"Total Page Load Time: " + totalTime + " milliseconds");
+		test.log(LogStatus.INFO, "Enter the Base URL Successfully");
+		
 		
 	}
 

@@ -89,9 +89,10 @@ public class UserAdd extends AppDriver {
         Thread.sleep(1000);
         
         WebElement userLocation = driver.findElement(By.xpath(Obj.getProperty("BY_LOC_SELECT")));
-        System.out.println("userLocation");
-        userLocation.sendKeys(exlib.readData("ValidUserData", 1, 4));
+//        userLocation.sendKeys(exlib.readData("ValidUserData", 1, 4));
+        Thread.sleep(1000);
         userLocation.sendKeys(Keys.SPACE);
+        Thread.sleep(1000);
     
     }
 	

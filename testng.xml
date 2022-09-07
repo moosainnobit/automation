@@ -2,13 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test name="test">
-		<groups>
-			<run>
-				<include name="Login-Functional" />
-				<exclude name="User-Functional" />
-				<exclude name="Organisation-Functional" />
-			</run>
-		</groups>
 		<classes>
 			<class name="AppTest" />
 		</classes>

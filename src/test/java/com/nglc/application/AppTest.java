@@ -108,9 +108,9 @@ public class AppTest extends AppDriver {
 	}
 	
 	
-	@Test(priority=7, groups = { "Login-Functional" })
+	@Test(priority=6, groups = { "Login-Functional" })
 	public void validateEmailAddressInPasswordScreen() throws InterruptedException {
-		test = extent.startTest("Login_FT_007 - Verify the email address field on password Screen as enter in login screen.");	
+		test = extent.startTest("Login_FT_006 - Verify the email address field on password Screen as enter in login screen.");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();		
 		le.clickOnNextButton();
@@ -120,9 +120,9 @@ public class AppTest extends AppDriver {
 	}
 	
 
-	@Test(priority=8, groups = {"Login-Functional"})
+	@Test(priority=7, groups = {"Login-Functional"})
 	public void validateErrorMessageBlankPassword() throws InterruptedException {
-	    test = extent.startTest("Login_FT_008 - Test with valid username and empty password and check if login fails");	
+	    test = extent.startTest("Login_FT_007 - Test with valid username and empty password and check if login fails");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -132,9 +132,9 @@ public class AppTest extends AppDriver {
 		lp.verifyLoginPasswordScreen();
 	}
 		
-	@Test(priority=9, groups = {"Login-Functional"})
+	@Test(priority=8, groups = {"Login-Functional"})
 	public void verifyMaskedPassword() throws InterruptedException {
-	    test = extent.startTest("Login_FT_009 - Check of the password is masked on the screen i.e., password must be in bullets or asterisks.");	
+	    test = extent.startTest("Login_FT_008 - Check of the password is masked on the screen i.e., password must be in bullets or asterisks.");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -143,9 +143,9 @@ public class AppTest extends AppDriver {
 	}
 		
 
-	@Test(priority=10, groups = {"Login-Functional"})	
+	@Test(priority=9, groups = {"Login-Functional"})	
 	public void invalidPassword() throws InterruptedException, IOException {
-		test = extent.startTest("Login_FT_010 - Test with valid username and Invalid password and check if login fails");	
+		test = extent.startTest("Login_FT_009 - Test with valid username and Invalid password and check if login fails");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();		
 		le.clickOnNextButton();
@@ -157,9 +157,9 @@ public class AppTest extends AppDriver {
 	}
 
 
-	@Test(priority=11, groups = {"Login-Functional"})	
+	@Test(priority=10, groups = {"Login-Functional"})	
 	public void validateErrorCaseSensitivityPwd() throws InterruptedException, IOException {
-		test = extent.startTest("Login_FT_011 - Check if the login function handles case sensitivity for Password");
+		test = extent.startTest("Login_FT_010 - Check if the login function handles case sensitivity for Password");
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();		
 		le.clickOnNextButton();
@@ -170,9 +170,9 @@ public class AppTest extends AppDriver {
 		lp.verifyLoginPasswordScreen();
 	}
 
-	@Test(priority=12, groups = { "Login-Functional" })
+	@Test(priority=11, groups = { "Login-Functional" })
 	public void forgotPassword() throws InterruptedException {
-		test = extent.startTest("Login_FT_012 -	verify when selecting forgot password link it is directing to forgot password page.");	
+		test = extent.startTest("Login_FT_011 -	verify when selecting forgot password link it is directing to forgot password page.");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -182,9 +182,9 @@ public class AppTest extends AppDriver {
 	}
 	
 	
-	@Test(priority=13, groups = { "Login-Functional" })
+	@Test(priority=12, groups = { "Login-Functional" })
 	public void verifyEmailAddress() throws InterruptedException {
-		test = extent.startTest("Login_FT_013 - Verify the Email Address Field.");	
+		test = extent.startTest("Login_FT_012 - Verify the Email Address Field.");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -195,9 +195,9 @@ public class AppTest extends AppDriver {
 	}
 
 
-	@Test(priority=14, groups = {"Login-Functional" })
+	@Test(priority=13, groups = {"Login-Functional" })
 	public void validEmailResetPassword() throws InterruptedException {
-		test = extent.startTest("Login_FT_014 - To check Send Reset Link button is clickable and message should be dispaly.");
+		test = extent.startTest("Login_FT_013 - To check Send Reset Link button is clickable and message should be dispaly.");
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -328,9 +328,9 @@ public class AppTest extends AppDriver {
 
 	
 	
-	@Test(priority=109, groups = { "Organisation-Functional" })
+	@Test(priority=108, groups = { "Organisation-Functional" })
 	public void countryDropdownVisible() throws InterruptedException {
-		test = extent.startTest("Org_FT_109 - Verify the Country dropdown is enabled and visible in the organisation List Screen.");	
+		test = extent.startTest("Org_FT_108 - Verify the Country dropdown is enabled and visible in the organisation List Screen.");	
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();		
 		le.clickOnNextButton();	
@@ -342,9 +342,9 @@ public class AppTest extends AppDriver {
 		
 	}
 	
-	@Test(priority=112, groups = { "Organisation-Functional" })
+	@Test(priority=109, groups = { "Organisation-Functional" })
 	public void searchIconClickable() throws InterruptedException {
-		test = extent.startTest("Org_FT_112 - Verify that Search Icon is clickable in Organisation List Screen");
+		test = extent.startTest("Org_FT_109 - Verify that Search Icon is clickable in Organisation List Screen");
 	le.verifyLoginAuthScreen();
 		le.enterValidUsername();		
 		le.clickOnNextButton();	
@@ -356,9 +356,9 @@ public class AppTest extends AppDriver {
 	}
 	
 	
-	@Test(priority = 113, groups = { "Organisation-Functional" })
+	@Test(priority = 110, groups = { "Organisation-Functional" })
 	public void searchExistingOrganisation() throws InterruptedException {
-		test = extent.startTest("Org_FT_113 - Verify Search Functionality in Organisation List Screen");
+		test = extent.startTest("Org_FT_110 - Verify Search Functionality in Organisation List Screen");
 		le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -372,10 +372,10 @@ public class AppTest extends AppDriver {
 	}
 
 	
-	@Test(priority = 114, groups = { "Organisation-Functional" })
+	@Test(priority = 111, groups = { "Organisation-Functional" })
 	public void searchNonExistingOrganisation() throws InterruptedException {
 		test = extent.startTest(
-				"Org_FT_114 - Verify that non Existing Data would be not visible in Organisation List Screen");
+				"Org_FT_111 - Verify that non Existing Data would be not visible in Organisation List Screen");
 		le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -389,9 +389,9 @@ public class AppTest extends AppDriver {
 	}
 
 	// need to work
-	@Test(priority = 115, groups = { "Organisation-Functional" })
+	@Test(priority = 112, groups = { "Organisation-Functional" })
 	public void CreateOrganisation() throws InterruptedException {
-		test = extent.startTest("Org_FT_115 - Verify Create Organization Functionality");
+		test = extent.startTest("Org_FT_112 - Verify Create Organization Functionality");
 		le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
@@ -406,9 +406,9 @@ public class AppTest extends AppDriver {
 	}
 
 	// need to work
-	@Test(priority = 116, groups = { "Organisation-Functional" })
+	@Test(priority = 113, groups = { "Organisation-Functional" })
 	public void BlankDataCreateOrganisation() throws InterruptedException {
-		test = extent.startTest("Org_FT_116 -Verify Validation Messages for Required Fields in Add Organization Screen");
+		test = extent.startTest("Org_FT_113 -Verify Validation Messages for Required Fields in Add Organization Screen");
 		le.verifyLoginAuthScreen();
 		le.enterValidUsername();
 		le.clickOnNextButton();
